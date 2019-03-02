@@ -25,22 +25,6 @@
                 <span class="help-block hidden"></span>
             </div>
         </div>
-<!--        <p class="line">
-        <label for="Email Id">
-          <span class="label">Email Id:</span>
-          <span class="fields">
-              <input type="email" value="" maxlength="100" id="email" name="email" required>
-          </span>
-        </label>
-        </p>    
-        <p class="line">
-        <label for="password">
-            <span class="label">Password:</span>
-            <span class="fields">
-                <input type="password" maxlength="12" id="password" name="password" required>
-            </span>
-        </label>
-        </p>-->
         <div id="errorlogin" class="alert alert-danger alert-dismissable hide">
         </div>
         <p class="submitLogin line">
