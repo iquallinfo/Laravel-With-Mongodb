@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('content')
 
-<!-- Services Section -->
+<!-- Register Section -->
 <!-- ============================= Content Area ========================================== -->        
 <div class="content register_page">
       <div id="success_reg" class="alert alert-success fade in hide">
@@ -180,7 +180,6 @@
 
          <div class="col-lg-12 col-md-12 submitbtn">
          <div class="label"></div> 
-          <!--<input type="hidden" name="rredirect" value="" />-->
           <input class="btn btn-primary" type="button" name="submit" value="Submit" id="registerbtn"  />
          </div> 
          </form>
