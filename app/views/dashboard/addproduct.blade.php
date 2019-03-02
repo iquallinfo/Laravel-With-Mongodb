@@ -115,7 +115,7 @@
 
                                    <div class="col-lg-12 col-md-12 submitbtn">
                                    <div class="label"></div> 
-                                    <!--<input type="hidden" name="rredirect" value="" />-->
+                                    
                                    <?php 
                                         if(!isset($productdata)){
                                     ?>
