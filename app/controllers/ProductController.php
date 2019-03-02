@@ -2,18 +2,6 @@
 
 class ProductController extends BaseController {
 
-	/*
-	|--------------------------------------------------------------------------
-	| Default Home Controller
-	|--------------------------------------------------------------------------
-	|
-	| You may wish to use controllers instead of, or in addition to, Closure
-	| based routes. That's great! Here is an example controller method to
-	| get you started. To route to this controller, just add the route:
-	|
-	|	Route::get('/', 'HomeController@showWelcome');
-	|
-	*/
         var $data = array();
         var $checkSession;
         public function __construct(){
@@ -22,9 +10,8 @@ class ProductController extends BaseController {
            
 	}
         
-        /* =========================== Front end ==================================== */
         
-        public function search()
+    public function search()
 	{
             if(isset($_GET["sort"]) && $_GET["sort"] != ""){
                 $col = $_GET["sort"];
@@ -66,7 +53,7 @@ class ProductController extends BaseController {
             return View::make('productlist',$this->data);
 	}
         
-        public function allproducts()
+	public function allproducts()
 	{
             if(isset($_GET["sort"]) && $_GET["sort"] != ""){
                 $col = $_GET["sort"];
@@ -104,7 +91,7 @@ class ProductController extends BaseController {
             return View::make('productlist',$this->data);
 	}
         
-        public function categoryproduct($category = NULL)
+	public function categoryproduct($category = NULL)
 	{
             if($category == NULL)
                 return Redirect::to('/products/allproducts');
@@ -144,7 +131,7 @@ class ProductController extends BaseController {
 	}
         
         
-        public function productdetail($owner = NULL,$product = NULL)
+	public function productdetail($owner = NULL,$product = NULL)
 	{
             if($owner == NULL && $product == NULL){
                 return Redirect::to('/products/allproducts');
@@ -193,7 +180,7 @@ class ProductController extends BaseController {
             return View::make('productdetails',$this->data);   
         }
         
-        public function ownerproducts($owner =  NULL, $category = NULL)
+	public function ownerproducts($owner =  NULL, $category = NULL)
 	{
             if($owner == NULL && $category == NULL)
                 return Redirect::to('/');
@@ -229,4 +216,3 @@ class ProductController extends BaseController {
             return View::make('productlist',$this->data);
 	}
 }
-
