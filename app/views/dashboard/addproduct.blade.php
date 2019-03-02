@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('content')
 
-<!-- Services Section -->
+<!-- Add Product Section -->
 <!-- ============================= Content Area ========================================== -->        
 
 <div class="content dashboard_page">
