@@ -85,7 +85,6 @@
                                                          <i class="fa fa-link"></i> Browse <input name="image" id="imgupload" onchange="setvalue(this.value)" type="file">
                                                       </span>
                                                       <input type="text" id="imagename" class="form-control uploadtxt" value="<?= (isset($productdata))?$productdata['image']:"" ?>" name="imagename" />
-            <!--                                      <input onchange="setvalue(this.value)" type="file" class="form-control" value="" id="image" name="image" />-->
                                                   <span class="help-block hidden"></span>
                                               </div>
                                           </div>
