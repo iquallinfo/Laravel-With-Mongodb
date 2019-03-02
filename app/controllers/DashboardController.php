@@ -2,18 +2,6 @@
 
 class DashboardController extends BaseController {
 
-	/*
-	|--------------------------------------------------------------------------
-	| Default Home Controller
-	|--------------------------------------------------------------------------
-	|
-	| You may wish to use controllers instead of, or in addition to, Closure
-	| based routes. That's great! Here is an example controller method to
-	| get you started. To route to this controller, just add the route:
-	|
-	|	Route::get('/', 'HomeController@showWelcome');
-	|
-	*/
         var $data = array();
         var $checkSession;
         public function __construct(){
@@ -90,7 +78,6 @@ class DashboardController extends BaseController {
             );
            $insertData = DB::collection('products')->insert($array);
            if($insertData){
-               //return Redirect::to('/');
                 $data["response"] = "success";
                 $data["redirectTo"] = url('/dashboard/products');
            }
@@ -390,7 +377,6 @@ class DashboardController extends BaseController {
             );
            $updateData = DB::collection('blogs')->where('_id', $id)->update($array);
            if($updateData){
-               //return Redirect::to('/');
                 return Redirect::to('/dashboard/blogs')->with('success', 'Blog Image set successfully');
            }
            else{
